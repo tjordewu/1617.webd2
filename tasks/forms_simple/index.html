@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Forms | Webdesign II | GDM</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="styles/helpers.css" rel="stylesheet">
+    <link href="styles/global.css" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main-navigation-wrapper">
+        <div class="container">
+            <div class="row">
+                <form id="frmRegistration" method="post" action="http://www.arteveldehogeschool.be/campusGDM/olivpa/formulieren.php">
+                    <header>
+                        <h1>Register for an account</h1>
+                        <p>To sign-up for a free basic account please provide us with some basic information using the contact form below. Please use valid credentials.</p>
+                    </header>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <div class="frm-field">
+                            <label for="txtUsername">Username</label>
+                            <input type="text" name="txtUsername" id="txtUsername"
+                                   placeholder="Write your Username here...">
+                            <span class="fa fa-user"></span>
+                        </div>
+                        <div class="frm-field">
+                            <label for="txtEmail">Email</label>
+                            <input type="text" name="txtEmail" id="txtEmail"
+                                   placeholder="Write your Email here...">
+                            <span class="fa fa-envelope"></span>
+                        </div>
+                        <div class="frm-field">
+                            <label for="txtPassword">Password</label>
+                            <input type="password" name="txtPassword" id="txtPassword"
+                                   placeholder="Write your Password here...">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                        <div class="frm-field">
+                            <label for="txtRetypePassword">Re-enter password</label>
+                            <input type="password" name="txtRetypePassword" id="txtRetypePassword"
+                                   placeholder="Re-enter your Password ...">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="frm-field">
+                            <label for="txtFirstName">Firstname</label>
+                            <input type="text" name="txtFirstName" id="txtFirstName" placeholder="Write your Firstname here...">
+                        </div>
+                        <div class="frm-field">
+                            <label for="txtSurName">Surname</label>
+                            <input type="text" name="txtSurName" id="txtSurName"
+                                   placeholder="Write your Surname here...">
+                        </div>
+                    </fieldset>
+                    <footer>
+                        <button id="btnSignUp" name="btnSignUp" type="submit">Sign Up</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/**
+* Fixed grid system
+*
+* Fixed grid system based on wrappers, containers, rows, columns, gutters and offset. Columns uses relative units, in this case percentages (%).
+*
+* @project GdmFixedGrid
+* @file grid.css
+* @version 1.0
+* @author Philippe De Pauw - Waterschoot
+* @copyright 2016
+* @license MIT
+*/
+ 
+/**
+* ————————-
+* @section Wrapper, container and row.
+* ————————-
+*/
+ 
+ .grid__wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.grid__container {
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+
+.grid__wrapper:after,
+.grid__container:after,
+.grid__row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**
+* ————————-
+* @section Grid columns.
+* ————————-
+*/
+
+.grid__column {
+    position: relative;
+    float: left;
+    margin: 0 1%;
+}
+
+.grid__column-12,
+.grid__column-11,
+.grid__column-10,
+.grid__column-9,
+.grid__column-8,
+.grid__column-7,
+.grid__column-6,
+.grid__column-5,
+.grid__column-4,
+.grid__column-3,
+.grid__column-2,
+.grid__column-1 {
+    position: relative;
+    float: left;
+    margin: 0 1%;
+}
+
+/**
+* Width 1 column = (100 - 12 * G) / 12 = 6.33333%
+* Width 2 columns = (100 - 6 * G) / 6 = 14.66666% or (2 * 6.33333 + 2)
+* Width 3 columns = (100 - 4 * G) / 4 = 23% or (3 * 6.33333 + 4)
+* Width 4 columns = (100 - 3 * G) / 3 = 31.33333% or (4 * 6.33333 + 6)
+* Width 5 columns = (5 * 6.33333 + 8) = 39.66666%
+* Width 6 columns = (100 - 2 * G) / 2 = 48% or (6 * 6.33333 + 10)
+* Width 7 columns = (7 * 6.33333 + 12) = 56.33333%
+* Width 8 columns = (8 * 6.33333 + 14) = 64.66666%
+* Width 9 columns = (9 * 6.33333 + 16) = 73%
+* Width 10 columns = (10 * 6.33333 + 18) = 81.33333%
+* Width 11 columns = (11 * 6.33333 + 20) = 89.66666%
+* Width 12 columns = (100 - 1 * G) / 1 = 98% or (12 * 6.33333 + 22)
+*/
+
+.grid__column-12 { width: 98%; }
+.grid__column-11 { width: 89.66666%; }
+.grid__column-10 { width: 81.33333%; }
+.grid__column-9 {  width: 73%; }
+.grid__column-8 {  width: 64.66666%; }
+.grid__column-7 {  width: 56.33333%; }
+.grid__column-6 {  width: 48%; }
+.grid__column-5 {  width: 39.66666%; }
+.grid__column-4 {  width: 31.33333%; }
+.grid__column-3 {  width: 23%; }
+.grid__column-2 {  width: 14.66666%; }
+.grid__column-1 {  width: 6.33333%; }
+
+/**
+* ————————-
+* @section Development Grid Selectors.
+* ————————-
+*/
+.grid__development .grid__wrapper {
+    background: rgba(255, 0, 0, 0.4);
+}
+.grid__development .grid__container {
+    background: rgba(0, 255, 0, 0.4);
+}
+.grid__development .grid__row {
+    background: rgba(0, 0, 255, 0.4);
+}
+.grid__development *[class*="grid__column-"] {
+    background: rgba(255, 255, 0, 0.4);
+    height: 64px;
+    margin-bottom: 12px;
+    
+    text-align: center;
+    line-height: 64px;
+}
+.grid__development *[class*="grid__column-"] > * {
+    background: rgba(255, 0, 255, 0.4);
+}

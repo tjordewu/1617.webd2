@@ -1,0 +1,91 @@
+/* Webfont */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+
+/* Navigation */
+#frmRegistration{
+    width:480px;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+}
+#frmRegistration *{
+    box-sizing: border-box;
+}
+#frmRegistration header{
+    text-align: center;
+    color:#ccc;
+}
+#frmRegistration fieldset {
+    margin:0 0 15px;
+    background:#222;
+    border:1px solid #333;
+}
+#frmRegistration legend{
+    display:none;
+}
+.frm-field {
+    position:relative;
+    display: block;
+    margin: 0 0 15px;
+}
+.frm-field label{
+    display:block;
+    color:#ccc;
+    margin:0 0 5px;
+}
+.frm-field input {
+    display: block;
+    padding: 5px 35px 5px 10px;
+    width: 100%;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 6px 10px -4px rgba(0, 0, 0, 0.3) inset, 0px 1px 1px -1px rgba(255, 255, 255, 0.3);
+    outline: medium none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #6E6E6E;
+    opacity:0.62;
+}
+.frm-field input:focus {
+    opacity:1;
+}
+.frm-field span.fa {
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:32px;
+    width:32px;
+    line-height:32px;
+    text-align: center;
+    color:#bbb;
+    border-left:1px solid #000;
+}
+#frmRegistration button {
+    width:100%;
+    margin:0;
+    padding: 15px 25px;
+    outline: medium none;
+    background:#28D2DE;
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    border:none;
+    border-bottom:4px solid #1a878f;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px #000;
+    opacity:0.66;
+    transition: opacity 320ms ease-in 0s;
+}
+#frmRegistration button:hover,
+#frmRegistration button:focus{
+    opacity:1;
+    transition: opacity 320ms ease-in 0s;
+}
+
+#frmRegistration button:active{
+    opacity:0.26;
+    transition: opacity 320ms ease-in 0s;
+}

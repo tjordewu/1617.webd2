@@ -1,0 +1,87 @@
+.plans{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.plans ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.plan {
+    background:rgba(255,255,255,1);
+    border-radius: 6px;
+    padding:0 0 20px;
+    margin:0 1%;
+    color: #ccc;
+    float:left;
+    width:23%;
+    position:relative;
+}
+.plan:active,
+.plan:hover,
+.plan:focus{
+    transform: scale(1.05);
+}
+.plan-name{
+    border-radius: 6px 6px 0 0;
+    padding: 15px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    background: #e74c3c;
+    margin:0 0 30px;
+    text-align: center;
+}
+.plan-sale{
+    transform: scale(1.05);
+}
+.plan-sale .plan-name{
+    background-color:#111;
+}
+.plan-price{
+    display:block;
+    text-align: center;
+    font-size:22px;
+    margin:0 0 15px;
+}
+.plan-price strong{
+    color: #fff;
+    background-color: #e74c3c;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 6px;
+}
+.plan-features li{
+    padding: 10px 15px;
+    border-top: 1px solid #f5f5f5;
+    text-align: center;
+}
+.plan-features li strong{
+    color:#e74c3c;
+    font-weight:bold;
+    margin-right:10px;
+}
+.plan-action{
+    display:block;
+    text-align: center;
+    margin:15px 0 0;
+}
+.plan-btn{
+    color: #fff;
+    background-color: #d2322d;
+    border: 1px solid #ac2925;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.plan-btn:active,
+.plan-btn:focus,
+.plan-btn:hover
+{
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #d2322d;
+}

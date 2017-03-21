@@ -1,0 +1,294 @@
+/**
+* ————————-
+* @section Header
+* ————————-
+*/
+
+.header-wrapper {
+    background: rgba(0, 0, 0, 1);
+}
+
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.arterecords-logo {
+    float: left;
+    margin: 0;
+}
+
+/**
+* ————————-
+* @section Content
+* ————————-
+*/
+
+.content-wrapper {
+    background: #f9f9f9;
+}
+
+.artist-content-wrapper {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 400px 0 48px 0;
+}
+
+.artist-content-wrapper.absintheminded {
+    background-image: url("../images/absynthe_minded_large.jpg?2");
+}
+
+.artist-content-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    
+    border-radius: 8px;
+}
+
+.artist-content-container a {
+    text-decoration: none;
+    
+    color: hsl(213, 41%, 44%);
+    border-bottom: 1px dotted hsl(213, 41%, 44%);
+}
+
+.artist-content-container a:hover,
+.artist-content-container a:focus,
+.artist-content-container a:link {
+    color: hsl(233, 41%, 44%);
+    border-bottom-color: hsl(233, 41%, 44%);
+}
+
+.breadcrumb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.breadcrumb__item {
+    float: left;
+    margin-right: 10px;
+}
+
+.breadcrumb__item a {
+    color: inherit;
+}
+
+.breadcrumb__item::after {
+    content: "›";
+    margin-left: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.bandmembers__figure {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.bandmembers__figure > figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    padding: 8px 16px;
+    
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.table {
+    border: solid 1px #999;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    border: solid 1px #999;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+
+/**
+* ————————-
+* @section Artist
+* ————————-
+*/
+
+.artists-content-wrapper {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 260px 0 48px 0;
+}
+
+.artists-content-wrapper.drdynscript {
+    background-image: url("../images/drdynscript_hero3.jpg?2");
+}
+
+.artists-content-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    
+    border-radius: 8px;
+}
+
+.artists-content-container a {
+    text-decoration: none;
+    
+    color: hsl(213, 41%, 44%);
+    border-bottom: 1px dotted hsl(213, 41%, 44%);
+}
+
+.artists-content-container a:hover,
+.artists-content-container a:focus,
+.artists-content-container a:link {
+    color: hsl(233, 41%, 44%);
+    border-bottom-color: hsl(233, 41%, 44%);
+}
+
+.artist {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+
+.artist a {
+    display: block;
+}
+
+.artist a figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.artist a figure img{
+    width: 100%;
+    opacity: 0.68;
+    transition: all 268ms ease-out 0s;
+}
+.artist a figure > figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    padding: 8px 16px;
+    
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.artist a:hover figure img{
+    opacity: 1;
+    transition: all 268ms ease-out 0s;
+}
+
+/**
+* ————————-
+* @section Footer
+* ————————-
+*/
+.footer-wrapper {
+    background: rgba(33, 33, 33, 1);
+    color: #fff;
+}
+.footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+
+.footer a:hover,
+.footer a:focus,
+.footer a:visited {
+    color: hsl(213, 41%, 44%);
+    border-bottom-color: hsl(213, 41%, 44%);
+}
+
+
+
+/**
+* ————————-
+* @section Navigation
+* ————————-
+*/
+.nav-primary {
+    display: block;
+    float: none;
+    
+    color: #a4a4a4;
+    font-weight: 300;
+}
+
+.nav-primary > .nav__list {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-primary .nav__item {
+    float: left;
+    line-height: 99px;
+}
+
+.nav-primary .nav__item > span {
+    display: inline;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.nav-primary .nav__item-link {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    text-decoration: none;
+    color: #a4a4a4;
+}
+
+.nav-primary .nav__item-link:hover {
+    color: hsl(213, 41%, 44%);
+}
+
+.nav-primary .nav__item-link--active {
+    color: hsl(213, 41%, 44%);
+}
+
+.nav-primary .nav__item-link--outline {
+    display: inline-block;
+    height: 48px;
+    
+    border: solid 1px hsl(213, 41%, 44%);
+    border-radius: 4px;
+    
+    line-height: 48px;
+}
+
+.nav-primary .nav__item-link--outline:hover {
+    background: hsl(213, 41%, 44%);
+    color: #fff;
+}

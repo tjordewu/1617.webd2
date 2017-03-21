@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Jonas Pottie">
+<title>Navigatie met 2 niveaus</title>
+<style>
+/* eest algemene zaken */
+body {
+	font-family:sans-serif; 	/*Geeft alles een schreefloos lettertype*/
+	}
+#navigation ul {
+	list-style-type:none; 		/*Zorgt ervoor dat de oplijsting geen weergave krijgt, geen bolletjes, geen cijvers... */
+	padding:0px;	 margin:0px;		/*Zorgt ervoor dat de oplijsting geen standaard ruimtes meer krijgt*/
+	}
+#navigation li {
+	display:block;				/*Zorgt ervoor dat de navigatie-elementen rond de links komen te staan en enkel de nodige ruimte innemen*/
+	float:left;					/*Zorgt ervoor dat de navigatie-elementen horizontaal komen te staan*/
+	margin:0 -1px -1px 0;		/*FIX: Zorgt ervoor dat de randjes van de knoppen elkaar zullen overlappen*/
+	}
+#navigation a {	
+	display:block;
+	padding:15px 15px 11px;
+	border:1px solid #ccc;
+	text-decoration:none;
+	color:blue;
+	}
+#navigation a:hover {
+	background-color:blue;		/*invert effect bij hoveren op een item*/
+	color:white;
+	transition:all 300ms;		/*dat effect mag een beetje vertraagd worden*/
+	}
+	
+/* vanaf nu het 2de niveau stijlen */
+#navigation ul.level2 {
+	display:none; 				/*Verberg het menu op het 2de niveau*/
+	margin-top:-1px;			/*FIX: Zorgt ervoor dat de randjes van de knoppen op eerste en 2de niveau elkaar zullen overlappen*/
+
+	}
+#navigation ul.level1 li.hassubnavigation:hover ul.level2 {
+	display:block;				/*Toon het menu op het 2de niveau wanneer de gebruiker op het parent-item hovert*/
+	position: absolute; 			/*Toon dit niveau onder het parent-item, zonder het parent-item open te duwen*/
+	/* LET OP, JE MOET EEN OFFSET PARENT VOORZIEN! */
+	}
+#navigation ul.level1 {
+	position:relative; 			/*Hallo, ik ben het offset parent!*/
+	}
+#navigation ul.level2 li {
+	float:none; 					/*de items op het 2de niveau wil ik onder elkaar*/
+	}
+</style>
+</head>
+
+<body>
+<h1>Het principe van een hovernavigatie</h1>
+<div id="navigation">
+<ul class="level1">
+	<li class="hassubnavigation"><a href="#">Eerste item</a>
+    	<ul class="level2">
+            <li><a href="#">Eerste subitem</a></li>
+            <li><a href="#">Tweede subitem</a></li>
+            <li><a href="#">Derde subitem</a></li>
+            <li><a href="#">Vierde subitem</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Tweede item</a></li>
+    <li class="hassubnavigation"><a href="#">Derde item</a>
+    	<ul class="level2">
+            <li><a href="#">Andere eerste subitem</a></li>
+            <li><a href="#">Andere tweede subitem</a></li>
+        </ul></li>
+    <li><a href="#">Vierde item</a></li>
+</ul>
+</div>
+</body>
+</html>

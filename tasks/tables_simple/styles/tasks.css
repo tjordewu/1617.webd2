@@ -1,0 +1,44 @@
+.tasks {
+    color: rgba(255,255,255,0.92);
+    font-size: 16px;
+    text-shadow: 1px 1px 0px rgba(22, 160, 133,0.6);
+    border: 1px solid rgba(22, 160, 133,0.4);
+    border-radius: 6px;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+.tasks thead{
+    color:#fff;
+}
+.tasks thead th {
+    padding: 15px 20px;
+    text-align: center;
+    background: rgba(22, 160, 133,0.8);
+    border-top: 1px solid rgba(22, 160, 133,0.6);
+    border-bottom: 1px solid rgba(22, 160, 133,1);
+}
+.tasks thead th:first-of-type {
+    border-top-left-radius: 6px;
+}
+.tasks thead th:last-of-type {
+    border-top-right-radius: 6px;
+}
+.tasks tbody td{
+    padding: 15px 20px;
+    background:rgba(26, 188, 156,1.0);
+    border-bottom:1px solid rgba(22, 160, 133,1);
+}
+.tasks tbody tr:hover td{
+    background:rgba(22, 160, 133,1);
+}
+.tasks tfoot{
+    color:rgba(255, 255, 255,0.4);
+}
+.tasks tfoot a{
+    color:rgba(255, 255, 255,0.768);
+}
+.tasks tfoot th{
+    padding: 15px 20px;
+    background: rgba(22, 160, 133,0.8);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

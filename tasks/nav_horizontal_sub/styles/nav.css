@@ -1,0 +1,105 @@
+/* Webfont */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+
+/* Navigation */
+#main-navigation-wrapper * {
+    box-sizing: border-box;
+}
+#main-navigation-wrapper{
+    background:rgba(211, 84, 0,1.0);
+    border-bottom:4px solid rgba(241, 196, 15,1.0);
+}
+#main-navigation {
+    display:block;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    background:rgba(230, 126, 34,0.36);
+}
+#main-navigation > ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#main-navigation > ul > li {
+    display:block;
+    float:left;
+    position:relative;
+}
+#main-navigation > ul > li > a {
+    display:block;
+    text-decoration:none;
+    padding:15px 30px;
+    color:rgba(241, 196, 15,1.0);
+    font-weight:800;
+    border-right:1px solid rgba(241, 196, 15,1.0);
+    text-transform: uppercase;
+}
+#main-navigation > ul > li:first-of-type > a {
+    border-left:1px solid rgba(241, 196, 15,1.0);
+}
+#main-navigation > ul > li > a:hover,
+#main-navigation > ul > li:hover > a,
+#main-navigation > ul > li > a:focus,
+#main-navigation > ul > li:focus > a,
+#main-navigation > ul > li.active > a
+{
+    background:rgba(241, 196, 15,1.0);
+    color:rgba(211, 84, 0,1.0);
+    transition:all 360ms ease-in 0s;
+}
+#main-navigation > ul > li.hasSubMenu > a::before {
+    content: '￬';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+}
+/* Depth 2, ++ */
+#main-navigation > ul > li ul {
+    background:rgba(241, 196, 15,1.0);
+    position:absolute;
+    left:0;
+    top:100%;
+    width:240px;
+    margin:0;
+    padding:0;
+    list-style: none;
+    display:none;
+}
+#main-navigation > ul li:hover > ul {
+    display:block;
+}
+#main-navigation > ul > li > ul li {
+    display:block;
+    position:relative;
+}
+#main-navigation > ul > li ul > li > a {
+    display:block;
+    text-decoration:none;
+    padding:15px 30px;
+    color:rgba(211, 84, 0,1.0);
+    font-weight:800;
+    border-bottom:1px solid rgba(211, 84, 0,1.0);
+    text-transform: uppercase;
+}
+#main-navigation > ul > li > ul > li ul {
+    top: 0;
+    left: 100%;
+}
+#main-navigation > ul > li > ul li.hasSubMenu > a::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+}
+#main-navigation > ul > li > ul li > a:hover,
+#main-navigation > ul > li > ul li:hover > a,
+#main-navigation > ul > li > ul li a:focus,
+#main-navigation > ul > li > ul li:focus > a,
+#main-navigation > ul > li > ul li.active > a
+{
+    color:rgba(241, 196, 15,1.0);
+    background:rgba(211, 84, 0,1.0);
+    transition:all 360ms ease-in 0s;
+}

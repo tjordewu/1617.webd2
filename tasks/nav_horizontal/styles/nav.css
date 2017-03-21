@@ -1,0 +1,46 @@
+/* Webfont */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+
+/* Navigation */
+#main-navigation-wrapper * {
+    box-sizing: border-box;
+}
+#main-navigation-wrapper{
+    background:rgba(211, 84, 0,1.0);
+    border-bottom:4px solid rgba(241, 196, 15,1.0);
+}
+#main-navigation {
+    display:block;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    background:rgba(230, 126, 34,0.36);
+}
+#main-navigation > ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#main-navigation > ul > li {
+    display:block;
+    float:left;
+}
+#main-navigation > ul > li > a {
+    display:block;
+    text-decoration:none;
+    padding:15px 25px;
+    color:rgba(241, 196, 15,1.0);
+    font-weight:800;
+    border-right:1px solid rgba(241, 196, 15,1.0);
+    text-transform: uppercase;
+}
+#main-navigation > ul > li:first-of-type > a {
+    border-left:1px solid rgba(241, 196, 15,1.0);
+}
+#main-navigation > ul > li > a:hover,
+#main-navigation > ul > li > a:focus,
+#main-navigation > ul > li.active > a
+{
+    background:rgba(241, 196, 15,1.0);
+    color:rgba(211, 84, 0,1.0);
+    transition:all 360ms ease-in 0s;
+}
