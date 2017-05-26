@@ -661,7 +661,7 @@ video {
 
 }
 
-.project_container{
+ect_container{
 
 	width: 100%;
 	height: 100vh;
@@ -698,7 +698,7 @@ video {
 	box-sizing: border-box;
 	border: solid 2px #303030;
 	margin-top: 15px;
-	background-image: url("../assets/vaborent.png");
+	background-image: url("../assets/vaborent.PNG");
 	background-size: cover;
 	background-position: center center;
 }
