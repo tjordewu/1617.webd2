@@ -65,7 +65,7 @@ html, body {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background-image: url('../images/header.jpg');
+	background-image: url('../assets/header.jpg');
 	background-size: cover;
 	background-position: center center;
 
@@ -452,7 +452,7 @@ video {
 
 	width: 100%;
 	height: auto;
-	background-image: url('../images/filler.jpg');
+	background-image: url('../assets/filler.jpg');
 
 }
 
@@ -511,7 +511,7 @@ video {
 
 #vaborent{
 
-	background-image: url('../images/vaborent.png');
+	background-image: url('../assets/vaborent.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -520,7 +520,7 @@ video {
 
 #gip{
 
-	background-image: url('../images/gip.png');
+	background-image: url('../assets/gip.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -530,7 +530,7 @@ video {
 
 #creaex{
 
-	background-image: url('../images/creaex.png');
+	background-image: url('../assets/creaex.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -540,7 +540,7 @@ video {
 
 #htc{
 
-	background-image: url('../images/htc.png');
+	background-image: url('../assets/htc.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -550,7 +550,7 @@ video {
 
 #logo{
 
-	background-image: url('../images/logo.png');
+	background-image: url('../assets/logo.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -560,7 +560,7 @@ video {
 
 #port{
 
-	background-image: url('../images/port.png');
+	background-image: url('../assets/port.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -570,7 +570,7 @@ video {
 
 #recept{
 
-	background-image: url('../images/recept.png');
+	background-image: url('../assets/recept.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -580,7 +580,7 @@ video {
 
 #seo{
 
-	background-image: url('../images/seo.png');
+	background-image: url('../assets/seo.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -590,7 +590,7 @@ video {
 
 #suits{
 
-	background-image: url('../images/suits.png');
+	background-image: url('../assets/suits.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -600,7 +600,7 @@ video {
 
 #vossemolen{
 
-	background-image: url('../images/vossemolen.png');
+	background-image: url('../assets/vossemolen.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -610,7 +610,7 @@ video {
 
 #hero{
 
-	background-image: url('../images/hero.jpg');
+	background-image: url('../assets/hero.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -620,7 +620,7 @@ video {
 
 #head{
 
-	background-image: url('../images/header.jpg');
+	background-image: url('../assets/header.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -698,7 +698,7 @@ video {
 	box-sizing: border-box;
 	border: solid 2px #303030;
 	margin-top: 15px;
-	background-image: url("../images/vaborent.png");
+	background-image: url("../assets/vaborent.png");
 	background-size: cover;
 	background-position: center center;
 }
@@ -783,7 +783,7 @@ video {
 	margin: auto;
 	border: solid 2px #419fd9;
 	border-radius: 100px;
-	background-image: url("../images/tjorven.jpg");
+	background-image: url("../assets/tjorven.jpg");
 	background-size: cover;
 	background-position: center center;
 
@@ -796,7 +796,7 @@ video {
 	margin: auto;
 	border: solid 2px #419fd9;
 	border-radius: 100px;
-	background-image: url("../images/gillian.jpg");
+	background-image: url("../assets/gillian.jpg");
 	background-size: cover;
 	background-position: center center;
 
@@ -809,7 +809,7 @@ video {
 	margin: auto;
 	border: solid 2px #419fd9;
 	border-radius: 100px;
-	background-image: url("../images/henri.jpg");
+	background-image: url("../assets/henri.jpg");
 	background-size: cover;
 	background-position: center center;
 
@@ -1512,7 +1512,7 @@ textarea{
 		box-sizing: border-box;
 		border: solid 2px #303030;
 		margin-top: 15px;
-		background-image: url("../images/vaborent.png");
+		background-image: url("../assets/vaborent.png");
 		background-size: cover;
 		background-position: center center;
 	}
@@ -1591,7 +1591,7 @@ textarea{
 		width: 80%;
 		margin-left: 10%;
 		height: 400px;
-		background-image: url(../images/tjorven.jpg);
+		background-image: url(../assets/tjorven.jpg);
 		background-size: cover;
 		background-position: center center;
 
@@ -1602,7 +1602,7 @@ textarea{
 		width: 80%;
 		margin-left: 10%;
 		height: 400px;
-		background-image: url(../images/gillian.jpg);
+		background-image: url(../assets/gillian.jpg);
 		background-size: cover;
 		background-position: center center;
 
@@ -1613,7 +1613,7 @@ textarea{
 		width: 80%;
 		margin-left: 10%;
 		height: 400px;
-		background-image: url(../images/henri.jpg);
+		background-image: url(../assets/henri.jpg);
 		background-size: cover;
 		background-position: center center;
 
@@ -1639,7 +1639,7 @@ textarea{
 		width: 60%;
 		height: 600px;
 		float: left;
-		background-image: url('../images/filler.jpg');
+		background-image: url('../assets/filler.jpg');
 		background-size: cover;
 		background-position: center center;
 	}
