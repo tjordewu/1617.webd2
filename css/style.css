@@ -698,7 +698,7 @@ ect_container{
 	box-sizing: border-box;
 	border: solid 2px #303030;
 	margin-top: 15px;
-	background-image: url("../assets/vaborent.PNG");
+	background-image: url("../assets/vaborent.png");
 	background-size: cover;
 	background-position: center center;
 }
